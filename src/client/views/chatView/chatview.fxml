@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="599.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.chatView.ChatViewController">
+   <children>
+      <TextArea fx:id="chatSpace" layoutY="120.0" prefHeight="315.0" prefWidth="599.0" style="-fx-background-color: lightyellow;" />
+      <Text fill="#0a77cc" layoutX="184.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the chat">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="messageField" layoutX="14.0" layoutY="66.0" />
+      <Button layoutX="202.0" layoutY="66.0" mnemonicParsing="false" onAction="#sendText" text="Send" />
+      <Button layoutX="310.0" layoutY="66.0" mnemonicParsing="false" text="Number of Chatters" />
+      <Label fx:id="chattersLabel" layoutX="465.0" layoutY="70.0" />
+   </children>
+</AnchorPane>
