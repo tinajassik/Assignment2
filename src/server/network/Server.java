@@ -12,7 +12,7 @@ public class Server {
     {
         try
         {
-            ServerSocket serverSocket = new ServerSocket(1236);
+            ServerSocket serverSocket = new ServerSocket(2237);
 
             int id= 0;
 

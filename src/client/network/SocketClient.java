@@ -60,7 +60,7 @@ public class SocketClient implements Client{
     @Override
     public void startClient() {
         try {
-           Socket socket = new Socket("localhost", 1236);
+           Socket socket = new Socket("localhost", 2237);
            clientSocketHandler = new ClientSocketHandler(socket,this);
         Thread thread = new Thread(clientSocketHandler);
         thread.setDaemon(true);
